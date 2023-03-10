@@ -16,3 +16,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+// TODO: publish all fortify files so you can modify reset-password url in e-mail content
+Route::get('/reset-password', function () {
+    return view('welcome');
+})->name('password.reset');
